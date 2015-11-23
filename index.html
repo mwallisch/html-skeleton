@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>An html5 project skeleton</title>
+   <style type="text/css"></style>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <script type="text/javascript"></script>
+</head>
+<body>
+    <header class="container">
+        <h1>HTML5 Sekeleton</h1>
+        <p>I am the header. Typically with a navigation bar.</p>
+    </header>
+
+    <main class="container">
+        <p>I am the main content area. So whatever the message of this site. It should be delivered here.</p>
+    </main>
+
+    <footer class="container">
+        <p>I am the footer. Typically at the bottom of the page.</p>
+        <div class="alert alert-info" id="status">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </footer>
+    <section class="components">
+        <div id="demoModal" class="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        I am a bootstrap modal.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('#status').append('<p><em>Jquery Ready</em></p>');
+        $('#status').append('<p><em>Bootstrap-js Ready&nbsp;</em><button class="btn btn-primary btn-xs" id="bootstrapProof">proof</button></p>');
+        $('#bootstrapProof').on('click',function() { $('#demoModal').modal(); });
+        $('#status').append('<p>Fontawesome Icons Ready <i class="fa fa-flag"></i></p>');
+    </script>
+</body>
+</html>
