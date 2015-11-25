@@ -1,0 +1,16 @@
+{
+  "name": "Ives Html5 Sekeleton",
+  "homepage": "https://github.com/mwallisch/html-skeleton",
+  "authors": [
+    "ives_markus <markus.wallisch@interactives.eu>"
+  ],
+  "description": "Simple project skeleton including jquery, bootstrap and fontawesome",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.3",
+    "bootstrap": "~3.3.6"
+  }
+}
