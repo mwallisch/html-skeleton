@@ -27,11 +27,11 @@ gulp.task('init', function() {
     // fontawesome
     console.log('copy fontawesome css')
     gulp.src(bowerPath+"/font-awesome/css/*")
-    .pipe(gulp.dest(cssPath));
+    .pipe(gulp.dest(cssPath + "/font-awesome/css"));
 
     console.log('copy fontawesome fonts')
     gulp.src(bowerPath+"/font-awesome/fonts/*")
-    .pipe(gulp.dest(fontPath));
+    .pipe(gulp.dest(cssPath + "/font-awesome/fonts"));
 });
 
 gulp.task('default', function() {
